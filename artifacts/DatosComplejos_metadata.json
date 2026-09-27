@@ -8,27 +8,27 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_direccion",
-						"type": "address"
+						"internalType": "string",
+						"name": "_saludo",
+						"type": "string"
 					}
 				],
-				"name": "cambiarDireccion",
+				"name": "cambiarSaludo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "datos",
+				"outputs": [
 					{
-						"internalType": "bytes32",
-						"name": "_textoHex",
-						"type": "bytes32"
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
 					}
 				],
-				"name": "compararCadenas",
-				"outputs": [],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -36,42 +36,9 @@
 				"name": "devolverSaludo",
 				"outputs": [
 					{
-						"internalType": "bytes32",
+						"internalType": "string",
 						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "direccion",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "operar",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "pausado",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -80,14 +47,40 @@
 			{
 				"inputs": [
 					{
-						"internalType": "bool",
-						"name": "_pausado",
-						"type": "bool"
+						"internalType": "bytes",
+						"name": "_datos",
+						"type": "bytes"
 					}
 				],
-				"name": "pausar",
+				"name": "guardarComoBytes",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "texto",
+						"type": "string"
+					}
+				],
+				"name": "guardarComoTexto",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "obtenerDatosComoString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -104,7 +97,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/11_Primitivos.sol": "Primitivos"
+			"contracts/12_DatosComplejos.sol": "DatosComplejos"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -118,12 +111,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/11_Primitivos.sol": {
-			"keccak256": "0x010fea380a8a8a2705182f67d5920c306411e716151ba239d6e70c6bdbeb720a",
+		"contracts/12_DatosComplejos.sol": {
+			"keccak256": "0x0235093fb8006a3d9b6cd02359307c9b914aad5ffe23667ffe84d4bbadf7cfab",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://9a0db9ad6f19558656b136ce824e0a16c85c9e3426da6c578e6cb9dbd9175c7f",
-				"dweb:/ipfs/QmSwnwGXicJbEyzgdmycoa1XcL7dwkbWU5DArihs5SLcTn"
+				"bzz-raw://d0055c949645ce6ef07752a1a292bca2adebf9bddc201cf6fc4e7ac7f4ef36e5",
+				"dweb:/ipfs/QmXNnX4Sc3qJ4yARkRP3h1tS4rv3AkyYKnCzdv5tcUe6jk"
 			]
 		},
 		"hardhat/console.sol": {
